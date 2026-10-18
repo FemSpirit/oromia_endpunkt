@@ -17,6 +17,6 @@ public class EndpunktApplication {
 
 	@GetMapping("/hello")
 	public String hello(@RequestParam(value = "name", defaultValue = "FemSpirit") String name) {
-		return String.format("Hello %s!", name);
+		return String.format("Hallo %s, mein Endpunkt funktioniert!", name);
 	}
 }

@@ -17,8 +17,13 @@ public class UserController {
     public ResponseEntity<List<UserResponseDTO>> getUsers()
     {
         List<UserResponseDTO> result = List.of(
-                new UserResponseDTO(1L, "nameone", "one@mail.de", new RoleResponseDTO(1L, "admin")),
-                new UserResponseDTO(2L, "nametwo", "two@mail.de", new RoleResponseDTO(2L, "user"))
+                new UserResponseDTO(1L, "oromia", "oromia@mail.de", new RoleResponseDTO(1L, "user")),
+                new UserResponseDTO(2L, "gandalf", "gandalf@mail.de", new RoleResponseDTO(2L, "admin")),
+                new UserResponseDTO(3L, "elrond", "elrond@mail.de", new RoleResponseDTO(3L, "member")),
+                new UserResponseDTO(4L, "blade", "blade@mail.de", new RoleResponseDTO(3L, "member")),
+                new UserResponseDTO(5L, "neo", "neo@mail.de", new RoleResponseDTO(3L, "member")),
+                new UserResponseDTO(6L, "tylerdurden", "tylerdurden@mail.de", new RoleResponseDTO(3L, "member")),
+                new UserResponseDTO(7L, "fantasticstorm", "fantasticstorm@mail.de", new RoleResponseDTO(3L, "member"))
         );
 
         return ResponseEntity.ok(result);
